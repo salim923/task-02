@@ -1,0 +1,115 @@
+/* Resetting some default styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #1f1c2c, #928dab);
+    color: #ffffff;
+}
+
+.container {
+    text-align: center;
+    width: 100%;
+    max-width: 350px;
+}
+
+h1 {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #ffffff;
+}
+
+.stopwatch {
+    background: #2e2b3e;
+    padding: 30px 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+    transition: all 0.3s ease;
+}
+
+#timeDisplay {
+    font-size: 2.5em;
+    margin: 20px 0;
+    color: #00e676;
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 15px;
+}
+
+.btn {
+    padding: 10px 25px;
+    font-size: 1em;
+    font-weight: bold;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    outline: none;
+    transition: background 0.3s ease;
+}
+
+#startStopBtn {
+    background-color: #00bcd4;
+}
+
+#resetBtn {
+    background-color: #f44336;
+}
+
+#lapBtn {
+    background-color: #8e24aa;
+}
+
+.btn:hover {
+    opacity: 0.9;
+    transform: scale(1.05);
+}
+
+#lapsList {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 20px;
+    max-height: 150px;
+    overflow-y: auto;
+    background-color: #3a384a;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+#lapsList li {
+    padding: 5px;
+    border-bottom: 1px solid #4a4855;
+    color: #00e5ff;
+    display: flex;
+    justify-content: space-between;
+}
+
+#lapsList li span {
+    font-weight: bold;
+    color: #fff;
+}
+
+.lap-section {
+    margin-top: 20px;
+}
+
+h2 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    color: #c4c4c4;
+}
+
+.stopwatch:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);
+}
